@@ -1,0 +1,83 @@
+button{
+  background: #3f3697;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  color:#fff;
+  font-family: Roboto;
+  font-weight: bolder;
+  border-color: #3d84b8;
+}
+
+button:hover{
+  background: #3f3697;
+  opacity: 90%;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  color: #3d84b8;
+  font-family: Roboto;
+  font-weight: bolder;
+  border-color: #3d84b8;
+}
+
+.logo {
+  width: 7rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.navbar {
+  background: transparent;
+  border: none;
+}
+
+.navbar-nav {
+  margin-top: 1rem;
+  padding-left: 5rem;
+  float: none;
+}
+ ul {
+   text-align: center;
+   float: none;
+ }
+
+ .navbar-inverse .navbar-nav>.active>a{
+   color: #344fa1;
+   background: transparent;
+   font-family: Roboto;
+   font-size: 2rem;
+   padding: 2rem 3rem 2rem 3rem ;
+   font-weight: bolder;
+   text-decoration: underline;
+ }
+
+ .navbar-inverse .navbar-nav>.active>a:hover{
+   color: #3d84b8;
+   background: transparent;
+   font-family: Roboto;
+   font-size: 2rem;
+   padding: 2rem 3rem 2rem 3rem ;
+   font-weight: bolder;
+   text-decoration: underline;
+ }
+
+ .navbar-inverse .navbar-nav>li>a {
+   color: #344fa1;
+   background: transparent;
+   font-family: Roboto;
+   font-size: 2rem;
+   padding: 2rem 3rem 2rem 3rem ;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #3d84b8;
+  background: transparent;
+  font-family: Roboto;
+  font-size: 2rem;
+  padding: 2rem 3rem 2rem 3rem ;
+}
+
+#myNavBar{
+  border-left: 2rem;
+}
