@@ -1,19 +1,17 @@
-body {
-  overflow-x: hidden;
-  background-color: #e1e5ea;
-}
-
 .bg-image {
   position: absolute;
   left: 1px;
   z-index: -1;
-  height: 100%;
+  height: 70%;
   width: 100%;
 }
 
+body {
+  background-color: #e1e5ea;
+}
 .intro {
   text-align: center;
-  margin: 20rem auto 25rem auto;
+  margin: 10rem auto 25rem auto;
   font-family: 'Balsamiq Sans';
 }
 
@@ -23,58 +21,66 @@ body {
   padding: 1rem;
 }
 
-.intro h1:last-child{
-  font-size: 6rem;
-    color: #fff;
-}
-
-.top-conatiner {
-  z-index: 1;
-}
-
-/*------------------------------------------Middle Container ----------------*/
-
 .middle-container {
-  background-color: #e1e5ea;
   width: 100%;
+  background-color: #e1e5ea;
   position: relative;
-  top:10rem;
-  padding-top: 5rem;
+  bottom: 5rem;
+  padding-top: 2rem;
+  height: 100%;
 }
 
-.row{
-  padding: 3rem;
+.map {
   text-align: center;
-
-}
-.img{
-  width: 51%;
+  padding: 1rem;
 }
 
-h2{
-  padding-top: 5rem;
-  font-weight: bolder;
+h2 {
+  padding: 3rem;
   text-align: left;
-  line-height: 1.5;
-  padding-bottom: 2rem;
-  font-family: serif;
-  font-size: 4rem;
+  font-family: 'Balsamiq Sans';
   color: #3f3697;
 }
 
-p{
-  font-family:Roboto;
-  line-height: 2;
-  color: #5eaaa8;
-  text-align: left;
+iframe {
+  border-radius: 2rem;
+  border: 2px solid #3f3697;
+}
+.details {
+  text-align: center;padding: 2rem;
+}
+h3 {
+  font-family: "Dancing Script";
+  color: #3f3697;
+  font-size: 3rem;
 }
 
-.des {
-  padding: 0 5rem 0 5rem;
+hr {
+  width: 40%;
+  position: relative;
+  border-color: grey;
+}
+
+.details p {
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  color: #5eaaa8;
+}
+
+.book {
+  text-align: center;padding: 2rem;
+}
+
+.book p {
+  font-size: 2rem;
+  font-family: 'Roboto';
+  line-height: 3rem;
+  padding: 3rem;
+  color: #5eaaa8;
 }
 
 .btn {
-  margin-top: 10rem;
+
   background: #1597bb;
   background-image: -webkit-linear-gradient(top, #1597bb, #054c78);
   background-image: -moz-linear-gradient(top, #1597bb, #054c78);
@@ -87,7 +93,6 @@ p{
   font-family: Arial;
   color: #ffffff;
   font-size: 21px;
-  padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
 
@@ -101,9 +106,9 @@ p{
   text-decoration: none;
   color: #ffffff;
 }
+
 .bottom-container {
   position: relative;
-  top:15rem;
   background-color: #0061a8;
   width: 100%;
   text-align: center;
@@ -129,16 +134,4 @@ p{
   text-align: center;
   margin: auto;
   color: #bdc7c9;
-}
-
-@media all and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
-  .bg-image{
-    display: block;
-  }
-  body{
-    width: 100%;
-    background-color: #e1e5ea;
 }

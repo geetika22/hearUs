@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/faq.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Dancing+Script:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <img src="images/background-3.jfif" alt="background">
     <div class="top-container">
+      <img src="images/bg.png" alt="background" class="bg-image">
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -37,20 +40,81 @@
 
         </div>
       </nav>
+      <div class="intro">
+        <h1>Welcome To Hear Us</h1>
+        <h1>Here To Hear Us</h1>
       </div>
-      <div class="middle-container">
-        <h2>What is Hear Us ?</h2>
-        <p>HearUS is an online emotional support system which provides trained listeners so that you can share your problems and issues without being judged.You can also get consultation from licensed psychologists.</p>
-        <h2>Who are the listeners?</h2>
-        <p>Listeners are trained volunteers under the supervision of Psychologists , majorly someone who belongs to this field.</p>
-        <h2>Can I become a listener?</h2>
-        <p>Yes, anyone who wants to help others can volunteer as a listener by just filling out a form.</p>
-        <h2>How do I book a session?</h2>
+    </div>
+
+    <div class="container middle-container">
+      <div class="row">
+        <div class="col-lg-12">
+          <button class="accordion">What is Hear Us ?</button>
+        <div class="panel">
+          <p>HearUS is an online emotional support system which provides trained listeners so that you can share your problems and issues without being judged.You can also get consultation from licensed psychologists.</p>
+        </div>
+
+        <button class="accordion">Who are the listeners?</button>
+        <div class="panel">
+          <p>Listeners are trained volunteers under the supervision of Psychologists , majorly someone who belongs to this field.</p>
+        </div>
+
+        <button class="accordion">Can I become a listener?</button>
+        <div class="panel">
+          <p>Yes, anyone who wants to help others can volunteer as a listener by just filling out a form.</p>
+        </div>
+
+        <button class="accordion">How do I book a session?</button>
+        <div class="panel">
         <p>(i) Click on the ‘Book Now’ button. (ii) Fill out the form (iii) Choose the duration for the session (iv) Click on ‘Pay Now’.</p>
-        <h2>Is there any other way of booking a session or to connect to a listener?</h2>
-        <p>Yes, you can book a session or connect to a listener using WhatsApp by clicking on the Whatsapp button.</p>
-        <h2>What are the charges ?</h2>
-        <p>Its totally free of cost if you want to connect to a listener. Online counselling sessions with licensed psychologists are paid.</p>
+        </div>
+
+        <button class="accordion">Is there any other way of booking a session or to connect to a listener?</button>
+        <div class="panel">
+          <p>Yes, you can book a session or connect to a listener using WhatsApp by clicking on the Whatsapp button.</p>
+        </div>
+
+        <button class="accordion">What are the charges ?</button>
+        <div class="panel">
+          <p>Its totally free of cost if you want to connect to a listener. Online counselling sessions with licensed psychologists are paid.</p>
+        </div>
+
+        </div>
       </div>
+    </div>
+    <div class="container bottom-container">
+      <div class="row">
+        <div class="col-lg-12  social">
+          <a href="https://www.instagram.com/hearus.me/"><i class="fa fa-instagram"></i></a>
+          <a href="https://api.whatsapp.com/message/N7VDQFACNUKGD1"><i class="fa fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/company/hearus/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+          <br>
+        </div>
+      </div>
+      <div class="row  copyright">
+        <div class="col-lg-12">
+          <p>Home Privacy Terms and Services About</p>
+          <p>Hear Us <i class="fa fa-copyright"></i> 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
   </body>
-</html>
+  </html>
