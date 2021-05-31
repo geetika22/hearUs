@@ -1,0 +1,117 @@
+.bg-image {
+  position: absolute;
+  left: 1px;
+  z-index: -1;
+  height: 70%;
+  width: 100%;
+}
+
+body {
+  background-color: #e1e5ea;
+}
+
+.intro {
+  text-align: center;
+  margin: 10rem auto 25rem auto;
+  font-family: 'Balsamiq Sans';
+}
+
+.intro h1:first-child {
+  font-size: 7rem;
+  color: #3f3697;
+  padding: 1rem;
+}
+
+/*---------------------------Middle Container-----------------------*/
+
+.middle-container {
+  background-color: #e1e5ea ;
+  width: 100%;
+  position: relative;
+  bottom: 5rem;
+  padding-top: 5rem;
+  height: 100%;
+}
+
+.row {
+  padding: 3rem;
+  text-align: center;
+}
+
+.img {
+  width: 50%;
+}
+
+.strong {
+  text-align: center;
+  padding: 5rem;
+}
+
+.strong h1{
+  font-family: 'Dancing Script';
+  margin-top: 10rem;
+  color: #3f3697;
+}
+
+.row p {
+  text-align: left;
+  line-height: 2.5;
+  padding: 5rem;
+  color: #5eaaa8;
+}
+
+h2 {
+  font-family: 'Balsamiq Sans';
+  color: #3f3697;
+}
+
+.quotes{
+  padding: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.quotes p {
+  font-size: 3rem;
+  font-family: "Dancing Script";
+  color: #3f3697;
+}
+
+.quotes img{
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.bottom-container {
+  position: relative;
+  height: 50%;
+  background-color: #0061a8;
+  width: 100%;
+  text-align: center;
+}
+
+.social>a {
+  padding: 1rem;
+  font-size: 3rem;
+  color: #f4eee8;
+}
+
+.social>a:hover {
+  padding: 1rem;
+  font-size: 3rem;
+  color: #51c4d3;
+}
+
+.copyright {
+  padding: 1rem;
+}
+
+.bottom-container .row {
+  padding: 1rem;
+}
+
+.bottom-container p{
+  text-align: center;
+  margin: auto;
+  color: #bdc7c9;
+}
