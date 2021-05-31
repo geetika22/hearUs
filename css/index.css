@@ -138,10 +138,16 @@ p{
   }
   body{
     width: 100%;
+    background-color: #e1e5ea;
 }
 
 @media all and (max-width: 500px) {
   .bg-image {
     min-width: 500px;
+  }
+
+  .middle-container {
+    padding-top: 0;
+    margin-top: -15rem;
   }
 }
