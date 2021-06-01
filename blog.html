@@ -1,83 +1,368 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Blog</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <link rel="shortcut icon" href="images/logo.ico">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="css/blog.css">
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Dancing+Script:wght@700&family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="top-container">
-      <img src="images/bg.png" alt="background" class="bg-image">
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-            <a href="#" class="navber-brand"><img class="logo" src="images/logo.png" alt="logo"></a>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top-container">
+    <img src="images/bg.png" alt="background" class="bg-image">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navber-brand"><img class="logo" src="images/logo.png" alt="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <button data-toggle="modal" class="btn btn-primary" style="  background: #3f3697;
+                border-radius: 2rem;
+                margin-top: 1rem;
+                padding: 1.5rem;
+                color:#fff;
+                font-family: Roboto;
+                font-weight: bolder;
+                border-color: #3d84b8;
+                float:right;" data-target="#myModal-2" type="button" name="button">Volunteer as Listener 💙</button>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <div class="intro">
+      <h1>Blogs</h1>
+    </div>
+  </div>
+  <div class="container middle-container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 card">
+        <a href="#" data-target="#blog1" data-toggle="modal"><img class="img" src="https://www.mpowerminds.com/assetOLD/images/pandemic.jpg" alt="image 1"></a>
+        <h4>Sapna Bangar</h4>
+        <br>
+        <h5>How pandemic has a long term impact on teens mental health & how they can recover from it</h5>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 card">
+        <a href="#blog2" data-toggle="modal"><img class="img" src="https://www.mpowerminds.com/assetOLD/images/stressatwork.jpg" alt="image-2"></a>
+        <h4>Jenisha Shah</h4>
+        <br>
+        <h5>Managing stress at work</h5>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 card">
+        <a href="#blog3" data-toggle="modal"><img class="img" src="https://www.mpowerminds.com/assetOLD/images/anxiety.jpg" alt=""></a>
+        <h4>Vikram Kirtikar</h4>
+        <br>
+        <h5>Signs and symptoms of Anxiety</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container bottom-container">
+    <div class="row">
+      <div class="col-lg-12  social">
+        <a href="https://www.instagram.com/hearus.me/"><i class="fa fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/message/N7VDQFACNUKGD1"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/hearus/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+        <br>
+      </div>
+    </div>
+    <div class="row  copyright">
+      <div class="col-lg-12">
+        <p>Home Privacy Terms and Services About</p>
+        <p>Hear Us <i class="fa fa-copyright"></i> 2021</p>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+  <script type="text/javascript">
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <label style="padding: 1rem; border-bottom:1rem; color:#0061a8; font-size:2rem;" for="email">Email Id:</label>
+            <br>
+            <input style="padding: 1rem; border-radius:1rem; width: 30%;" type="email" id="email" placeholder="Enter your email">
+            <br>
+            <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="name">Name :</label>
+            <br>
+            <input style="padding: 1rem; border-radius:1rem; width: 30%;" type="name" id="name" placeholder="Enter your name">
+            <br>
+            <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="number">Phone Number :</label>
+            <br>
+            <input style="padding: 1rem; border-radius:1rem; width: 30%;" type="phone" id="number" placeholder="Enter your phone number">
+            <br>
+            <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="date">Age :</label>
+            <br>
+            <input style="padding: 1rem; border-radius:1rem; width: 30%;" type="number" id="date" placeholder="Enter your age">
+            <br>
+            <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="des">What interests you :</label>
+            <br>
+            <textarea rows="8" cols="80" placeholder="Write a brief description..." style="padding: 1rem; border-radius:1rem; width: 30%;" id="des"></textarea>
           </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="active"><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <button type="button" name="button">Volunteer as Listener 💙</button>
-            </ul>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button style="margin: 2rem; border-radius: 1rem; width:7rem; height: 5rem;" type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          <button style="margin: 2rem; border-radius: 1rem; width:15rem; height: 5rem;" type="button" class="btn-primary" data-toggle="popover" title="Appointment Booked"
+            data-content="Your Appointment is booked. We will get in touch with you shortly.">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="blog1" tabindex="-1" role="dialog" aria-labelledby="blog-1Modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button style="margin: 2rem; border-radius: 1rem; width:5rem; height: 5rem; float:right;" type="button" class="btn-secondary" data-dismiss="modal">X</button>
+          <img style="width:50%;" class="img" src="https://www.mpowerminds.com/assetOLD/images/pandemic.jpg" alt="image 1"></a>
+          <h3 style="color: #0061a8;">How pandemic has a long term impact on teens mental health & how they can recover from it</h3>
 
         </div>
-      </nav>
-      <div class="intro">
-        <h1>Blogs</h1>
+        <div class="modal-body">
+            <p style="padding: 2rem;
+                 font-size:1.5rem;
+                 ">
+              In this blog let’s talk about the long term impact on teens mental health. Teenage is one of the most exciting and most difficult times of one’s life. They are exploring their identity, their sexuality, worrying about their future,
+              pushing boundaries set by parents to set their own and coming to terms with being on the cusp of adulthood but still at times feeling like children and being confused about which they like better.
+              <br>
+              <br>
+              It is also a stage where parents take a backseat and friends gain utmost importance. Where screaming matches, slamming doors, saying hurtful things to adults and then regretting it become commonplace. Unfortunately, the pandemic has
+              forced all of us to stay at home but this has most acutely affected teens mental health.
+              <br>
+              <br>
+              The change in routine, the lack of privacy, the lack of opportunity to vent out against parents and teachers, the inability to meet friends who are in a similar boat, dealing with virtual learning seems to have taken a toll on the
+              youngsters. There is a rise in anxiety and depression in teenagers with epic proportions.
+              <br>
+              <br>
+              Being a Psychiatrist dealing with children and young adults, I am seeing many teenagers feeling frustrated, trapped, unable to communicate their feelings, feeling overwhelmed with their emotions, finding it difficult to deal with the
+              uncertainty that this pandemic has brought as well as seeing their parents struggle with the situation and feeling helpless about it.
+              <br> <br>
+              Sleep disturbances, having panic attacks, Increase in addictions, depression, self-harm or suicidal thoughts, anxiety, lack of concentration are some of the common presenting complaints for teenagers.
+              <br> <br>
+              Unfortunately we cannot control everything but some of the things that the young people and their parents can do to encourage the teenagers are…
+              <br> <br>
+              ​Also, read: Cannabis and mental health
+              <br>
+              <br>
+              Stay connected
+              <br> <br>
+              Maintaining physical distance need not mean social distancing. Stay connected with your loved ones, family and friends. Call your friend, have a video-call or catch up with your family or check in with someone on social media. seeking
+              support from others helps us realize that we may not be alone
+              <br> <br>
+              Express your feelings
+              <br> <br>
+              It’s okay to feel overwhelmed, confused, uncertain. What is important is that you express your feelings with someone you trust. You can also write a diary or use creative arts to let go of your pent up emotions
+              <br> <br>
+              Get into a daily routine
+              <br> <br>
+              When everything around us seems uncertain, having a structure and routine makes us feel in control. you might find it helpful to plan out your time in advance and know what you are doing each day, so you have something to look forward
+              to.
+              <br> <br>
+              Look after your personal environment
+              <br> <br>
+              Create a space that you are able to enjoy and feel comfortable in. It could even be a small corner of your room or a space in the balcony.
+              <br> <br>
+              Take a break from social media if you need to
+              <br> <br>
+              Stay away from excessive negative news coverage or social media
+              <br> <br>
+              Foster Wellness
+              <br> <br>
+              Eat, sleep and exercise regularly. Avoid excessive Caffeine, alcohol or illicit Substances. Develop new or revisit old hobbies. Spend at least some ‘me time’ even if it for 10 minutes in a day doing something that you enjoy. Practice
+              Yoga, Meditation or Mindfulness to reduce stress levels.
+              <br> <br>
+              Be Thankful
+              <br> <br>
+              Practice learning the art of being thankful for what you have. You can maintain a gratitude journal and remember that sometimes the things that we take for granted are the most important things to be thankful for!
+              <br> <br>
+              Find a purpose
+              <br> <br>
+              Take up a social cause like helping others who are less fortunate. Helping others elevates our self-esteem and adds to our resilience.
+              Set realistic goals- you may need to revisit your goals or move the timelines of achieving them. Break your goals into small achievable targets and slowly move towards it.
+              <br> <br>
+              Seek Help
+              <br> <br>
+              Seeking help from a professional when you need it in a timely fashion is crucial in building resilience especially when you feel stuck or have difficulty making progress.
+
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button style="margin: 2rem; border-radius: 1rem; width:7rem; height: 5rem;" type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-    <div class="container middle-container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#"><img class="img" src="https://www.mpowerminds.com/assetOLD/images/pandemic.jpg" alt="image 1"></a>
-          <h4>Sapna Bangar</h4>
-          <br>
-          <h5>How pandemic has a long term impact on teens mental health & how they can recover from it</h5>
+  </div>
+
+
+  <div class="modal fade" id="blog2" tabindex="-1" role="dialog" aria-labelledby="blog-2Modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button style="margin: 2rem; border-radius: 1rem; width:5rem; height: 5rem; float:right;" type="button" class="btn-secondary" data-dismiss="modal">X</button>
+          <img style="width:50%;" class="img" src="https://www.mpowerminds.com/assetOLD/images/stressatwork.jpg" alt="image 2"></a>
+          <h3 style="color: blue;">Managing stress at work</h3>
+
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#"><img class="img" src="https://www.mpowerminds.com/assetOLD/images/stressatwork.jpg" alt="image-2"></a>
-          <h4>Jenisha Shah</h4>
-          <br>
-          <h5>Managing stress at work</h5>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <a href="#"><img class="img" src="https://www.mpowerminds.com/assetOLD/images/anxiety.jpg" alt=""></a>
-          <h4>Vikram Kirtikar</h4>
-          <br>
-          <h5>Signs and symptoms of Anxiety</h5>
+        <div class="modal-body">
+
+            <p style="padding: 2rem;
+                 font-size:1.5rem;
+
+                 color: #0061a8;">
+              Stress at work in these tumultuous times, we have all felt the struggle to keep up with the pressures of work from home and being at home. Therefore, it is hardly a surprise that occupational stress has been on a rise.<br /><br />
+              <b>So What is Occupational stress?<br /><br /></b>
+              According to <b>the American Psychological Association(APA)</b>, Occupational Stress ‘is a physiological and psychological response to events or conditions in the workplace that is detrimental to health and well-being. It is influenced
+              by such factors as autonomy and independence, decision latitude, workload, level of responsibility, job security, physical environment and safety, the nature and pace of work, and relationships with co-workers and supervisors. Stress at
+              work involves changes affecting nearly every system of the body, influencing how people feel and behave.’
+              <br /><br />Also read: <a href='https://mpowerminds.com/blog/What-are-the-causes-of-stress-in-the-workplace' target='_blank'>What are the causes of stress in the workplace?</a><br /><br />
+              However, not all stress is bad! We don’t need to demonize stress but understand it better.<br /><br />
+              <b>Identify the stressors</b><br /><br />
+              There are two kinds of stress:<b> Eustress and distress</b> – both of which can motivate us in different ways. Eustress is the stress that helps us take on a doable challenge which leads to a positive experience and also self-growth.
+              Survival and performance need eustress. It could be moving into a new apartment with the excitement and stress that comes with it.<br /><br />
+              Distress is associated with any stressor that is deemed to be negative, causes anxiety and hinders our ability to function appropriately and think clearly. For example, feeling stuck at a job one doesn’t enjoy or feel passionate about,
+              conflict with colleagues, dealing with a work bully.<br /><br />
+              Ms S, a Manager in a leading company shared that she finds multitasking constantly to be a big stressor. She often feels helpless and now that she is working from home the pressure to multitask has gone to a whole new level. Besides
+              this she has micro Stressors like Underestimated deadlines, bureaucracy etc. Micro-stressors may seem insignificant at first but they are like the apps and notifications draining your phone’s battery in the background.<br /><br />
+              Effects of constant stress at work usually result in fatigue, lack of productive behaviour, job dissatisfaction often higher attrition rate and worst-case scenario burn out.<br /><br />
+              When your body is under constant stress it results in low energy, weight gain, high blood pressure and ultimately lifestyle diseases like diabetes and mental health concerns like depression, anxiety, eating disorders.<br /><br />
+
+
+
+              <b>Defusing your stressors</b><br /><br />
+              Below are the best 9 ways to help manage stress at the workplace: (these are not to be seen as prescriptive but rather help reflect on ways you are handling the stress at work)<br /><br />
+            <ol style="padding: 2rem;
+ font-size:1.5rem;
+color: #0061a8;
+ ">
+              <li><b>Reappraising your Goals-</b>Remembering and re-evaluating your goals will familiarize you towards one direct focus. It will contribute to the longevity of your efforts and optimize your strategy so that you are not waylaid with
+                distractions and burdens which further add to your stress.</li>
+
+              <li><b>The morning routine of nothingness –</b> Meditation may feel daunting. However, an alternative is to do nothing and simply focus on your breathe after waking up. Doing this just for 10 minutes helps with being a little less
+                reactive and more reflective through the day. Don’t let your phone decide your mood for the day!</li>
+
+              <li><b>Finding Value in the work you do-</b>Find at least one thing you value in the work you do every day. Focus on aspects of the job that you do enjoy, even if it’s just spending time with your co-workers. It will help reframe the
+                way you look at your work and regain a sense of purpose and control.
+                <?li>
+
+<li><b>Create and maintain boundaries:</b> Everyone has their different interpretations what work life balance means to them. Creating clear boundaries between work and home life will reduce the potential for any conflict and the stress that goes with it.</li>
+
+<li><b>Pause, reflect and Communicate-</b>Stop and think of all the stressors that have been affecting you lately. Find a way to brainstorm with a friend or a colleague to reach a resolution and challenge the roadblocks you might be facing.</li>
+
+<li><b>Self-care-</b> “A house divided against itself cannot stand”- Abraham Lincoln. Start prioritizing yourself. Taking care of yourself means being mindful and proactive. Self-care is never selfish or wrong. Eat, Sleep, exercise and repeat.</li>
+
+<li><b>Celebrate your victories-</b> Pat yourself on the back or cheer yourself a little every time you make a healthy choice for yourself at work. Relish the big and small achievements they can be highly effective in the long run.</li>
+
+<li><b>Recharge and Relax-</b>Take regular breaks. Take a break from technology, and go for a walk every day. Take a break from work and go on a short trip every few months. This will also help you gain healthier perspectives in places you felt stuck.</li>
+
+<li><b>Work buddies and finding support-</b> Delegating and asking for help from work buddies can help to relieve stress. If the feelings of <a href='https://mpowerminds.com/blog/How-do-Anxiety-Disorders-Develop-What-are-the-Red-Flags-How-to-Cope' target=''>anxiety</a> continue to overwhelm you, then it would be a good time to talk to a psychologist.someone who can help you understand unhealthy behaviour patterns and better manage your stress at work.
+</li>
+</ol>
+ </p>
+            </div>
+          <div class="modal-footer">
+            <button  style="margin: 2rem; border-radius: 1rem; width:7rem; height: 5rem;" type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container bottom-container">
-      <div class="row">
-        <div class="col-lg-12  social">
-          <a href="https://www.instagram.com/hearus.me/"><i class="fa fa-instagram"></i></a>
-          <a href="https://api.whatsapp.com/message/N7VDQFACNUKGD1"><i class="fa fa-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/company/hearus/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
-          <br>
-        </div>
-      </div>
-      <div class="row  copyright">
-        <div class="col-lg-12">
-          <p>Home Privacy Terms and Services About</p>
-          <p>Hear Us <i class="fa fa-copyright"></i> 2021</p>
+
+    <div class="modal fade" id="blog3" tabindex="-1" role="dialog" aria-labelledby="blog-1Modal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button  style="margin: 2rem; border-radius: 1rem; width:5rem; height: 5rem; float:right;" type="button" class="btn-secondary" data-dismiss="modal">X</button>
+            <img style="width:50%;" class="img" src="https://www.mpowerminds.com/assetOLD/images/anxiety.jpg" alt="image 1"></a>
+            <h3 style="color: #0061a8;">Signs and symptoms of Anxiety</h3>
+
+          </div>
+          <div class="modal-body">
+
+                <p style="padding: 2rem;
+                 font-size:1.5rem;
+                 ">
+                 As humans we encounter different situations in our daily life. Each situation is coloured by how we think, feel and behave in these situations and our experiences are shaped by how we feel. In this blog let us understand what is anxiety & what are the signs & symptoms of anxiety.  <br/><br/>
+
+Although thoughts govern how we feel, the emotions that we experience in itself play a role in how we process the situation. Feeling happy in a situation may make us want to approach a situation more as compared to feeling scared that may make us want to avoid a particular situation. <br/><br/>
+
+It is natural to experience emotions and express them. Each emotion that we experience has a purpose and when we experience it in the right situation, it can actually aid us. E.G. Before an exam or a presentation at work, we may feel anxious. This anxiety pushes us to open that book and read before the exam starts or go through the presentation that one more time before we present it.<br/><br/>
+
+But there are times when we experience an emotion even when it is not required or may be at an intensity which is not needed. In such scenarios, experiencing the emotion can become a problem to us as it may interfere with the tasks that we are doing. E.G. If before an exam or presentation, the amount of anxiety we experience is at a higher intensity, it may lead to an experience of confusion and impact our ability to present or write the paper. <br/><br/>
+
+Now it may all sound like doom and despair but not all is lost. If we are able to understand emotions and lookout for the signs and symptoms, we are more equipped to identify them and deal with them effectively, especially when it comes to an emotion like anxiety which may have signs and symptoms of anxiety that may resemble certain other conditions or signs of physical illness. <br/><br/>
+
+It is always and strongly recommended to seek medical advice & intervention from a doctor, however even after a thorough medical assessment and clean chit from the doctor, if we are experiencing the following, it is a good idea to consult a <a href='https://mpowerminds.com/seekhelp' target='_blank'>mental health professional</a> to check if anxiety is playing a role somewhere.<br/><br/>
+
+Signs & symptoms of anxiety may include a feeling of restlessness which may be for a short duration in bouts or may stay for a longer duration. A constant worry about things in the present and future or that of the past. The feeling of despair and doom. <br/><br/>
+
+Certain physical manifestations like a fast heartbeat, like a feeling of pounding against the chest, warm cheeks, dry mouth, feeling of tightness or pain in the chest, breathing heavily would be present.<br/><br/>
+
+Some other physical symptoms of anxiety may include cold hands and feet, sweaty palms, feeling drained of energy, especially in the hands and legs, pain in other areas of the body which may be temporary and come and go often, trembling of hands and shivering sensation in legs.
+Thoughts about the future are more prominent and the thoughts are repetitive in nature although not constant.<br/><br/>
+
+There may also be a preoccupation with one’s own health, excessive focus on small physical sensations, small changes in one’s health and fear of dying.<br/>
+Extreme reactions to mild stressors may be present, e.g. excessive worry or a strong reaction of anger if one has to travel alone. Avoidance of the situation or activity due to fear may also be observed.<br/><br/>
+
+Also read: <a href='https://mpowerminds.com/blog/Is-Digital-Recluse-the-Best-Practice-for-Mindfulness' target='_blank'>How do Anxiety Disorders Develop — What are the Red Flags & How to Cope?</a><br/><br/>
+
+Heightened level of alertness and the pursuit of wanting to be prepared for all possible scenarios. Feeling distressed if the person thinks that they are not completely prepared and may indulge in higher frequency of anticipation of future events. This may also lead to the person getting nervous to do things or take decisions in the present.<br/>
+Experience of breathlessness or a feeling of choking or a lump in the throat sensation may be present. Anxiety of specific situations or things living and non-living can be observed by others and experienced by the person.<br/><br/>
+
+Although there are several factors that may create anxiety in children, separation from a comforting person, thing or situation may create anxiety in children.<br/>
+Children may express anxiety through behaviour more often as compared to verbal expression. Behaviour such as avoidance, excessive crying and becoming quite and staying quite can be observed.<br/><br/>
+
+These signs and symptoms of anxiety can seem distressful and may make us feel anxious when we read about them, however we can try to view them as knowledge that empowers, equips us and guides us to seek help and take care of ourselves in a more effective way. <br/><br/>
+
+For more details related to anxiety get in touch with our experts
+               </p>
+          </div>
+          <div class="modal-footer">
+            <button  style="margin: 2rem; border-radius: 1rem; width:7rem; height: 5rem;" type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>

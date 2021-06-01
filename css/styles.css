@@ -1,3 +1,7 @@
+p {
+  color: #3b14a7;
+}
+
 button{
   background: #3f3697;
   border-radius: 2rem;
@@ -7,9 +11,10 @@ button{
   font-family: Roboto;
   font-weight: bolder;
   border-color: #3d84b8;
+  float:right;
 }
 
-button:hover{
+.btn:hover{
   background: #3f3697;
   opacity: 90%;
   border-radius: 2rem;
@@ -19,6 +24,10 @@ button:hover{
   font-family: Roboto;
   font-weight: bolder;
   border-color: #3d84b8;
+}
+
+.top-container   {
+  z-index: 99
 }
 
 .logo {
@@ -80,4 +89,24 @@ button:hover{
 
 #myNavBar{
   border-left: 2rem;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #344fa1; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #3d84b8; /* Add a dark-grey background on hover */
 }

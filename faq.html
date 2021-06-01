@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>FAQ</title>
+    <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,7 +35,15 @@
               <li><a href="blog.html">Blog</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li class="active"><a href="faq.html">FAQ</a></li>
-              <button type="button" name="button">Volunteer as Listener 💙</button>
+              <button data-toggle="modal" class="btn btn-primary" style="  background: #3f3697;
+                border-radius: 2rem;
+                margin-top: 1rem;
+                padding: 1.5rem;
+                color:#fff;
+                font-family: Roboto;
+                font-weight: bolder;
+                border-color: #3d84b8;
+                float:right;" data-target="#myModal-2" type="button" name="button">Volunteer as Listener 💙</button>
             </ul>
           </div>
 
@@ -91,7 +100,7 @@
           <br>
         </div>
       </div>
-      
+
     </div>
 
     <script>
@@ -111,5 +120,62 @@
     }
     </script>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+    <script type="text/javascript">
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+    <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="images/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <label style="padding: 1rem; border-bottom:1rem; color:#0061a8; font-size:2rem;" for="email">Email Id:</label>
+                <br>
+                <input style="padding: 1rem; border-radius:1rem; width: 30%;" type= "email" id="email" placeholder="Enter your email">
+                <br>
+                <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="name">Name :</label>
+                <br>
+                <input style="padding: 1rem; border-radius:1rem; width: 30%;" type="name" id="name" placeholder="Enter your name">
+                <br>
+                <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="number">Phone Number :</label>
+                <br>
+                <input style="padding: 1rem; border-radius:1rem; width: 30%;" type="phone" id="number" placeholder="Enter your phone number">
+                <br>
+                <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="date">Age :</label>
+                <br>
+                <input style="padding: 1rem; border-radius:1rem; width: 30%;" type="number" id="date" placeholder="Enter your age">
+                <br>
+                <label style="padding: 1rem; border-bottom:1rem; border-top:1.5rem; color:#0061a8; font-size:2rem;" for="des">What interests you :</label>
+                <br>
+                <textarea rows="8" cols="80" placeholder="Write a brief description..."  style="padding: 1rem; border-radius:1rem; width: 30%;" id="des" ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button  style="margin: 2rem; border-radius: 1rem; width:7rem; height: 5rem;" type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+              <button style="margin: 2rem; border-radius: 1rem; width:15rem; height: 5rem;"  type="button" class="btn-primary" data-toggle="popover" title="Appointment Booked" data-content="Your Appointment is booked. We will get in touch with you shortly.">Submit</button>
+            </div>
+          </div>
+      </div>
+    </div>
   </body>
   </html>

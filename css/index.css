@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   background-color: #e1e5ea;
+  font-family: "Balsamiq Sans"
 }
 
 .bg-image {
@@ -57,7 +58,7 @@ h2{
   text-align: left;
   line-height: 1.5;
   padding-bottom: 2rem;
-  font-family: serif;
+  font-family: "Balsamiq Sans";
   font-size: 4rem;
   color: #3f3697;
 }
@@ -65,16 +66,17 @@ h2{
 p{
   font-family:Roboto;
   line-height: 2;
-  color: #5eaaa8;
+  color: #3b14a7;
   text-align: left;
+  margin-bottom: 5rem; 
 }
 
 .des {
   padding: 0 5rem 0 5rem;
 }
 
-.btn {
-  margin-top: 10rem;
+a.button {
+  margin-top: 5rem;
   background: #1597bb;
   background-image: -webkit-linear-gradient(top, #1597bb, #054c78);
   background-image: -moz-linear-gradient(top, #1597bb, #054c78);
@@ -91,7 +93,7 @@ p{
   text-decoration: none;
 }
 
-.btn:hover {
+.button:hover {
   background: #150e56;
   background-image: -webkit-linear-gradient(top, #150e56, #061621);
   background-image: -moz-linear-gradient(top, #150e56, #061621);

@@ -64,7 +64,7 @@ hr {
 .details p {
   font-size: 1.5rem;
   font-family: 'Roboto';
-  color: #5eaaa8;
+  color: #3b14a7;
 }
 
 .book {
@@ -76,11 +76,11 @@ hr {
   font-family: 'Roboto';
   line-height: 3rem;
   padding: 3rem;
-  color: #5eaaa8;
+  color: #3b14a7;
 }
 
-.btn {
-
+.button {
+  padding: 10px 25px 10px 25px;
   background: #1597bb;
   background-image: -webkit-linear-gradient(top, #1597bb, #054c78);
   background-image: -moz-linear-gradient(top, #1597bb, #054c78);
@@ -96,7 +96,7 @@ hr {
   text-decoration: none;
 }
 
-.btn:hover {
+.button:hover {
   background: #150e56;
   background-image: -webkit-linear-gradient(top, #150e56, #061621);
   background-image: -moz-linear-gradient(top, #150e56, #061621);
